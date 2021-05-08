@@ -14,7 +14,7 @@ def prime(n):
             for _ in range(i * i, limit + 1, i):
                 a |= b
                 b <<= i
-    for i in range(i + 1, n + 1):
+    for i in range(i + 1, limit + 1):
         a >>= 1
         if a & 1 == 0:
             k += 1
