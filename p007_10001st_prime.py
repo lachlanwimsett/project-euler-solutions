@@ -26,7 +26,7 @@ def prime(n):
     a ^= (1 << a.bit_length()) - 1
     primes = bit_count(a) + k
 
-    for _ in range(primes, n, -1):
+    for _ in range(n, primes):
         a &= (1 << a.bit_length() - 1) - 1
     return a.bit_length() + p
 
